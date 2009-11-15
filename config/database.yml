@@ -1,0 +1,31 @@
+development:
+  adapter: mysql
+  database: marevela_development
+  encoding: utf8 
+  pool: 5 
+  username: adhock
+  password: mpUt1rKs 
+  host: localhost
+  socket: /var/run/mysqld/mysqld.sock
+
+test:
+  adapter: mysql
+  database: marevela_test
+  encoding: utf8 
+  pool: 5 
+  username: adhock
+  password: mpUt1rKs 
+  host: localhost
+  socket: /var/run/mysqld/mysqld.sock
+
+production:
+  adapter: mysql
+  database: marevela
+  encoding: utf8 
+  pool: 5 
+  username: adhock
+  password: mpUt1rKs 
+  host: localhost
+  socket: /var/run/mysqld/mysqld.sock
+
+
