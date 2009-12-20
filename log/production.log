@@ -1189,3 +1189,57 @@ ActionController::RoutingError (No route matches "/rails/info/properties" with {
   passenger (2.2.5) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
 
 Rendering /home/www/marevela/public/404.html (404 Not Found)
+
+
+Processing EventsController#index (for 90.15.32.20 at 2009-12-02 22:33:00) [GET]
+Rendering template within layouts/events
+Rendering events/index
+Completed in 317ms (View: 78, DB: 229) | 200 OK [http://marevela.adhock.org/events]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:35:49) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 13ms (View: 6, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:39:57) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:40:39) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:41:08) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:44:55) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:45:00) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:46:46) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]
+
+
+Processing VisitorController#index (for 90.15.32.20 at 2009-12-02 22:46:51) [GET]
+Rendering template within layouts/visitor
+Rendering visitor/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://marevela.adhock.org/visitor]

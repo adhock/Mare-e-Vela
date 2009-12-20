@@ -1,6 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :events
   map.resources :visitor
+  map.resources :marine
 
   # The priority is based upon order of creation: first created -> highest priority.
 

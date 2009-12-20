@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Events: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'menu' %>
+</head>
+<body>
+
+<div id='tete'>
+<%= image_tag("logo.jpg") %>
+<ul id="tabnav">
+     <li class="active"><a href="#">Accueil</a></li>
+     <li><a href="/marine?id=1">Port Toga</a></li>
+     <li><a href="/marine?id=2">Pietracorbara</a></li>
+     <li><a href="/events">Calendrier</a></li>
+     <li><a href="contact">Contact</a></li>
+</ul>
+</div>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<div id='corps'>
+<%= yield %>
+</div>
+
+<div id='pied'>Emplacement du pied de page avec plusieurs liens</div>
+</body>
+</html>
