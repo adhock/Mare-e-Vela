@@ -5,19 +5,24 @@
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Events: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'menu' %>
+  <%= stylesheet_link_tag 'general','menu' %>
 </head>
 <body>
 
-<div id='tete'>
-<%= image_tag("logo.jpg") %>
-<ul id="tabnav">
+  <div id='entete'>
+    <div id='logo'><%= image_tag("logo.jpg") %></div>
+    <div id='titre'>Cercle Nautique Mare e Vela</div>
+  </div>
+
+<div id='menu'>
+  <ul id="tabnav">
      <li class="active"><a href="#">Accueil</a></li>
-     <li><a href="/marine?id=1">Port Toga</a></li>
-     <li><a href="/marine?id=2">Pietracorbara</a></li>
+     <li><a href="informations">Informations</a></li>
+     <li><a href="club">Club</a></li>
      <li><a href="/events">Calendrier</a></li>
-     <li><a href="contact">Contact</a></li>
-</ul>
+     <li><a href="liens">Liens</a></li>
+     <li><a href="liens" disabled>Adh&eacute;rents</a></li>
+   </ul>
 </div>
 
 <p style="color: green"><%= flash[:notice] %></p>
@@ -26,6 +31,10 @@
 <%= yield %>
 </div>
 
-<div id='pied'>Emplacement du pied de page avec plusieurs liens</div>
+<div class='pied'>
+<center>
+  Cercle Nautique Mare e Vela, Port de plaisance de Toga, 20200 Ville di Pietrabugno; Tel : 04 95 31 41 83; Port : 06 17 52 38 66; Email : cnmarevela@aol.fr
+</center>
+</div>
 </body>
 </html>
