@@ -1,0 +1,12 @@
+.pied {position:absolute;bottom:5pt;font-size:8pt;font-family:arial;color:#a0a0a0; left:50%;width:800px;margin-left:-400px;  }
+.slogan {height:45pt;font-size:20pt;font-family:Arial;font-style:italic;}
+.adresse {width:300px;font-size:12pt;font-family:Arial;}
+.photo_marine {display:block;}
+
+#marine-left {float:left;width:50%;font: normal 25pt arial;color:#334c60;}
+#marine-right {width:100%;font: normal 25pt arial;color:#334c60;}
+
+#logo {float:left;}
+#titre {margin-left:170px;margin-top:35px;font: normal 45pt arial;color:#334c60;}
+#menu {clear:both;}
+#entete {height:135px;border:1px solid #fff;}

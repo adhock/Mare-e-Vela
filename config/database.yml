@@ -1,0 +1,26 @@
+development:
+  adapter: mysql
+  database: marevela
+  username: masterall
+  password: -j-symbol
+  host: localhost
+  port: 3306
+  socket: /tmp/webo-mysql.sock
+
+test:
+  adapter: mysql
+  database: marevela
+  username: masterall
+  password: -j-symbol
+  host: localhost
+  port: /tmp/webo-mysql.sock
+
+production:
+  adapter: mysql
+  database: marevela
+  username: masterall
+  password: -j-symbol
+  host: 10.10.10.100
+  port: 3307
+
+
