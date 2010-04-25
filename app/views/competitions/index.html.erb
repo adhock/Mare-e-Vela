@@ -1,0 +1,12 @@
+Liste des competitions : <br>
+<table>
+<% @competitions.each do |competition| %>
+  <tr>
+    <td><%= competition.name %><td>
+    <td><%= link_to 'voir', competition_path(competition) %></td>
+    <td><%= link_to 'editer', edit_competition_path(competition) %></td>
+    <td><%= link_to 'supprimer', competition_path(competition), :confirm => 'Vous allez supprimer cet competition. Cette operation est irreverssible !', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to "ajouter", new_competition_path %>

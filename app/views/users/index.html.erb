@@ -1,0 +1,14 @@
+<table>
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.login %></td>
+    <td><%= user.state.name %></td>
+    <td><%= user.role.name %></td>
+    <td><%= link_to 'voir', user_path(user) %></td>
+    <td><%= link_to 'editer', edit_user_path(user) %></td>
+    <td><%= link_to 'supprimer', user_path(user), :confirm => 'Vous allez supprimer cet utilisateur. Cette operation est irreverssible !', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to "ajouter", new_user_path %>

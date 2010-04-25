@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Espace d'administration</title>
+</head>
+<body>
+Espace d'administration
+<p style="color: red"><%= flash[:error] %></p>
+<p style="color: green"><%= flash[:notice] %></p>
+<ul> 
+  <li style='display:inline;'><%= link_to 'Utilisateurs', users_path %></li>
+  <li style='display:inline;'><%= link_to 'Regates' , regates_path %></li>
+  <li style='display:inline;'><%= link_to 'Clubs' , clubs_path %></li>
+  <li style='display:inline;'><%= link_to 'Competitions', competitions_path %></li>
+  <li style='display:inline;'><%= link_to 'Liens', links_path %></li>
+  <li style='display:inline;'><%= link_to 'logout', :controller => "login", :action => "logout" %></li>
+</ul>
+
+<%= yield %>
+
+</body>
+</html>

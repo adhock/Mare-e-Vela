@@ -1,0 +1,4 @@
+<% form_for(:competition, :url => competitions_path()) do |f| %>
+  Nom : <%= f.text_field :name %></br>
+  <%= submit_tag "valider" %>
+<% end %>

@@ -1,0 +1,10 @@
+<% form_for(:user, :url => user_path(@user), :html => { :method => :put }) do |f| %>
+  Nom : <%= f.text_field :lastname %></br>
+  Prenom : <%= f.text_field :firstname %></br>
+  Email :<%= f.text_field :email %></br>
+  Login : <%= f.text_field :login %></br>
+  Password : <%= f.text_field :password %></br>
+  Role : <%= f.collection_select :role_id, @roles, 'id', 'name' %>  
+  Status : <%= f.collection_select :state_id, @states, 'id', 'name' %>  
+  <%= submit_tag "valider" %>
+<% end %>

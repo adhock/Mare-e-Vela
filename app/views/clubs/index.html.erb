@@ -1,0 +1,12 @@
+<table>
+<% @clubs.each do |club| %>
+  <tr>
+    <td><%= club.name %></td>
+    <td><%= club.location %></td>
+    <td><%= link_to 'voir', club_path(club) %></td>
+    <td><%= link_to 'editer', edit_club_path(club) %></td>
+    <td><%= link_to 'supprimer', club_path(club), :confirm => 'Vous allez supprimer ce club. Cette operation est irreverssible !', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to "ajouter", new_club_path %>

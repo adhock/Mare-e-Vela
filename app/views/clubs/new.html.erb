@@ -1,0 +1,6 @@
+<% form_for(:club, :url => clubs_path) do |f| %>
+  Nom : <%= f.text_field :name %></br>
+  Lieu : <%= f.text_field :location %></br>
+  Site web : <%= f.text_field :website %></br>
+  <%= submit_tag "valider" %>
+<% end %>

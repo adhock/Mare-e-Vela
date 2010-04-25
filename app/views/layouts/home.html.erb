@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Events: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'general','menu' %>
+</head>
+<body>
+
+  <div id='entete'>
+    <div id='logo'><%= image_tag("logo.jpg") %></div>
+    <div id='titre'>Cercle Nautique Mare e Vela</div>
+  </div>
+
+<div id='menu'>
+  <ul id="tabnav">
+     <li><a href="/home">Accueil</a></li>
+     <li><a href="informations">Informations</a></li>
+     <li><a href="club">Club</a></li>
+     <li><a href="/home/calendrier">Calendrier</a></li>
+     <li><a href="/home/liens">Liens</a></li>
+     <li><a href="/login/login">Administrateur</a></li>
+   </ul>
+</div>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<div id='corps'>
+<%= yield %>
+</div>
+
+<div class='pied'>
+<center>
+  Cercle Nautique Mare e Vela, Port de plaisance de Toga, 20200 Ville di Pietrabugno; Tel : 04 95 31 41 83; Port : 06 17 52 38 66; Email : cnmarevela@aol.fr
+</center>
+</div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Administration</title>
+  </head>
+  <body>
+    Espace d'administration des utilisateurs
+    <%= link_to 'logout', :controller => "login", :action => "logout" %>
+<div><%= flash[:error] %></div>
+<div><%= flash[:notice] %></div>
+    <%= yield :layout %>
+  </body>
+</html>

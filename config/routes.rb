@@ -1,7 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
+  map.root :controller => "home"
   map.resources :events
   map.resources :visitor
   map.resources :marine
+
+  map.resources :users
+  map.resources :regates
+  map.resources :clubs
+  map.resources :competitions
+  map.resources :links
+
 
   # The priority is based upon order of creation: first created -> highest priority.
 

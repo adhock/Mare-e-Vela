@@ -1,0 +1,29 @@
+<%= @date %><br> 
+<table>
+  <tr>
+    <td>Debut</td>
+    <td>Fin</td>
+    <td>Nom</td>
+    <td>Club</td>
+    <td>Lieu</td>
+    <td>Competition</td>
+  </tr>
+<% mois = '00' %>
+<% @regates.each do |regate| %>
+  <% if mois != regate.start.month 
+    mois = regate.start.month %>
+    <tr>
+      <td colspan=2><%= month_name(mois) %></td>
+      <td colspan=3></td>
+    </tr>
+  <% end %>
+  <tr>
+    <td><%= regate.start.day %></td>
+    <td><%= regate.end.day %></td>
+    <td><%= regate.name %></td>
+    <td><%= regate.club.name %></td>
+    <td><%= regate.location %></td>
+    <td><%= regate.competition.name %></td>
+  </tr>
+<% end %>
+</table>

@@ -1,0 +1,12 @@
+Liste des regates : <br>
+<table>
+<% @regates.each do |regate| %>
+  <tr>
+    <td><%= regate.name %><td>
+    <td><%= link_to 'voir', regate_path(regate) %></td>
+    <td><%= link_to 'editer', edit_regate_path(regate) %></td>
+    <td><%= link_to 'supprimer', regate_path(regate), :confirm => 'Vous allez supprimer cet regate. Cette operation est irreverssible !', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to "ajouter", new_regate_path %>

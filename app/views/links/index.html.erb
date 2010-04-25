@@ -1,0 +1,12 @@
+<table>
+<% @links.each do |link| %>
+  <tr>
+    <td><%= link.name %></td>
+    <td><%= link.url %></td>
+    <td><%= link_to 'voir', link_path(link) %></td>
+    <td><%= link_to 'editer', edit_link_path(link) %></td>
+    <td><%= link_to 'supprimer', link_path(link), :confirm => 'Vous allez supprimer ce lien. Cette operation est irreverssible !', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<%= link_to "ajouter", new_link_path %>

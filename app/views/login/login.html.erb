@@ -1,0 +1,9 @@
+<div><%= flash[:error] %></div>
+<div><%= flash[:notice] %></div>
+
+Identification<br>
+<% form_tag do %>
+  Login : <%= text_field_tag :login, params[:login] %><br>
+  Password : <%= text_field_tag :password, params[:password] %><br>
+  <%= submit_tag 'identification' %>
+<% end %>

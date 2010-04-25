@@ -1,0 +1,6 @@
+<% form_for(:link, :url => link_path(@link), :html => { :method => :put }) do |f| %>
+  Titre : <%= f.text_field :name %></br>
+  URL : <%= f.text_field :url %></br>
+  position : <%= f.text_field :position %></br>
+  <%= submit_tag "valider" %>
+<% end %>

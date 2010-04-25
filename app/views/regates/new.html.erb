@@ -1,0 +1,9 @@
+<% form_for(:regate, :url => regates_path) do |f| %>
+  Nom : <%= f.text_field :name %></br>
+  Club : <%= f.collection_select :club_id, @clubs, 'id', 'name' %>
+  Competition : <%= f.collection_select :competition_id, @competitions, 'id', 'name' %>
+  Lieu : <%= f.text_field :location %></br>
+  Debut : <%= f.text_field :start %></br>
+  Fin : <%= f.text_field :end %>  
+  <%= submit_tag "valider" %>
+<% end %>

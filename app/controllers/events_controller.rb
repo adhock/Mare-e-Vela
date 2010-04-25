@@ -84,4 +84,8 @@ class EventsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def calendrier
+    @regates = Regate.apres('2010-01-01')
+  end
 end
